@@ -1,0 +1,94 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --color-bg: #0f1117;
+  --color-surface: #1a1d27;
+  --color-surface-2: #21263a;
+  --color-border: #2a2f45;
+  --color-text-primary: #e8eaf0;
+  --color-text-secondary: #8b8fa8;
+  --color-text-muted: #555a72;
+  --color-accent: #6366f1;
+  --color-accent-hover: #4f52d0;
+  --color-accent-soft: rgba(99, 102, 241, 0.15);
+  --color-green: #10b981;
+  --color-green-soft: rgba(16, 185, 129, 0.15);
+  --color-red: #ef4444;
+  --color-red-soft: rgba(239, 68, 68, 0.15);
+  --color-yellow: #f59e0b;
+  --color-yellow-soft: rgba(245, 158, 11, 0.15);
+  --color-blue: #3b82f6;
+  --color-blue-soft: rgba(59, 130, 246, 0.15);
+  --color-purple: #a855f7;
+  --color-purple-soft: rgba(168, 85, 247, 0.15);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-md: 15px;
+  --font-size-lg: 18px;
+  --font-size-xl: 22px;
+  --font-size-2xl: 28px;
+  --font-size-3xl: 36px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
+
+  /* Sidebar */
+  --sidebar-width: 240px;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}

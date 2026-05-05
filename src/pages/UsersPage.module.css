@@ -1,0 +1,113 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.searchInput {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 8px 14px 8px 32px;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  width: 260px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.searchInput::placeholder {
+  color: var(--color-text-muted);
+}
+
+.searchInput:focus {
+  border-color: var(--color-accent);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 3px;
+}
+
+.filterBtn {
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: none;
+  border: none;
+  transition: background 0.15s, color 0.15s;
+  cursor: pointer;
+}
+
+.filterBtn:hover {
+  background-color: var(--color-surface-2);
+  color: var(--color-text-primary);
+}
+
+.filterBtn.active {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 8px 16px;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  transition: background 0.15s;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}

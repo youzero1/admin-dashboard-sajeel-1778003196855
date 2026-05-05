@@ -1,0 +1,49 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.chartsRow {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-4);
+}
+
+.chartMain {
+  min-width: 0;
+}
+
+.chartSide {
+  min-width: 0;
+}
+
+.bottomRow {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--space-4);
+}
+
+.lineChartWrap {
+  min-width: 0;
+}
+
+.feedWrap {
+  min-width: 0;
+}
+
+@media (max-width: 1100px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chartsRow,
+  .bottomRow {
+    grid-template-columns: 1fr;
+  }
+}
